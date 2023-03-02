@@ -1,7 +1,7 @@
-const Hero = () => {
+const Hero = ({ text, backdrop }) => {
 	return (
-		<header className="bg-dark text-white p-5">
-			<h1>This is the Hero!</h1>
+		<header className="bg-dark text-white p-5 hero-container">
+			<h1>{text}</h1>
 		</header>
 	)
 }
