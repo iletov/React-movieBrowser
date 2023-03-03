@@ -8,8 +8,8 @@ const Navbar = ({ searchText, setSearchText }) => {
     // send the user to the search page with the useNavigate()
     navigate('/search')
     setSearchText(e.target.value)
-    // console.log(e.target.value)
   }
+
 
 
   return (
@@ -33,11 +33,13 @@ const Navbar = ({ searchText, setSearchText }) => {
         </li>
       </ul>
       <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" 
+        <input 
+        className="form-control me-2" type="search" 
         placeholder="Search" aria-label="Search" 
-        value={searchText} onChange={updateSearchText} 
+        value={searchText} 
+        onChange={updateSearchText} 
         />
-        <button className="btn btn-outline-success" type="submit">Search</button>
+        <button className="btn btn-outline-success" type="submit" >Search</button>
       </form>
     </div>
   </div>
